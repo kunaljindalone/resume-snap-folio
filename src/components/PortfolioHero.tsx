@@ -43,9 +43,9 @@ const PortfolioHero = () => {
           
           <div className="flex justify-center space-x-6">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Code, href: "#", label: "LeetCode" }
+              { icon: Github, href: "https://github.com/Kuna1jindal", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/kunal-jindal-8465891a7/", label: "LinkedIn" },
+              { icon: Code, href: "https://leetcode.com/u/Kunal_Jindal/", label: "LeetCode" }
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
