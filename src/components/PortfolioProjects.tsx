@@ -16,16 +16,7 @@ const PortfolioProjects = () => {
         "Integrated Facebook BART model with LDA to generate abstractive summaries"
       ]
     },
-    {
-      title: "LetsChat - Full-Stack Chat Application",
-      period: "2024-25", 
-      description: "Developing a full-stack YouTube comment sentiment analysis and summarization tool with real-time processing capabilities.",
-      technologies: ["React.js", "MongoDB", "Express", "Node.js", "HTML", "Bootstrap"],
-      highlights: [
-        "Integrated Facebook BART model with LDA for content-based sentiment extraction",
-        "Tools & technologies used: React.js, Mongo db, Express, Node.js HTML, Bootstrap"
-      ]
-    },
+    
     {
       title: "Computer Vision Project",
       period: "2025",
