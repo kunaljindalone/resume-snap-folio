@@ -7,8 +7,8 @@ const PortfolioContact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "kunjal.jindal2015@gmail.com",
-      href: "mailto:kunjal.jindal2015@gmail.com"
+      value: "kunaljindalone@gmail.com",
+      href: "mailto:kunaljindalone@gmail.com"
     },
     {
       icon: Phone,
@@ -20,7 +20,7 @@ const PortfolioContact = () => {
       icon: MapPin,
       label: "Location",
       value: "Jalandhar, Punjab, India",
-      href: null
+      href: "https://share.google/QNFf1j8DMfxktRRFO"
     }
   ];
 
@@ -28,19 +28,19 @@ const PortfolioContact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "#",
+      href: "https://github.com/Kuna1jindal",
       color: "hover:text-foreground"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      href: "#",
+      href: "https://www.linkedin.com/in/kunal-jindal-8465891a7/",
       color: "hover:text-blue-500"
     },
     {
       icon: Code,
       label: "LeetCode",
-      href: "#", 
+      href: "https://leetcode.com/u/Kunal_Jindal/", 
       color: "hover:text-yellow-500"
     }
   ];
