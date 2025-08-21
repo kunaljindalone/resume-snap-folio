@@ -15,21 +15,21 @@ const PortfolioEducation = () => {
       institution: "Innocent Hearts Jalandhar",
       degree: "Class 12th",
       period: "2021",
-      percentage: "94%",
+      percentage: "93.6%",
       location: "Jalandhar, Punjab"
     },
     {
       institution: "St. Manu's Convent School",
       degree: "Class 10th", 
       period: "2019",
-      percentage: "88%",
+      percentage: "87.4%",
       location: "Jalandhar, Punjab"
     }
   ];
 
   const experience = {
     title: "Intern - Python with Machine Learning",
-    company: "Technobyt",
+    company: "Pie Infotech",
     period: "Jan 2025 - July 2025",
     description: "Gained practical experience in Python programming and machine learning algorithms, working on real-world projects and contributing to the development team."
   };
