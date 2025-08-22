@@ -116,7 +116,14 @@ const PortfolioContact = () => {
           <div>
             <h3 className="text-2xl font-semibold text-foreground mb-8">Send a Message</h3>
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50">
-              <form className="space-y-6">
+              <form 
+                className="space-y-6"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  // Handle form submission here
+                  console.log('Form submitted');
+                }}
+              >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
