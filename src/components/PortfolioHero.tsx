@@ -44,7 +44,7 @@ const PortfolioHero = () => {
               <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Contact Me
             </Button>
-            <a href={`${import.meta.env.BASE_URL}KunalJindalResume_21_Aug2025.pdf`} target="_blank">
+            <a href={`https://drive.google.com/file/d/1sImpSyYnQExuJWYrK1xDNQdg5JcjEVin/view?usp=sharing`} target="_blank">
             <Button 
               variant="outline" 
               size="lg" 
