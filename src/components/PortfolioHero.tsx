@@ -31,11 +31,24 @@ const PortfolioHero = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button variant="hero" size="lg" className="group">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="group"
+              onClick={() => {
+                const contactSection = document.querySelector('section:last-of-type');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Contact Me
             </Button>
-            <Button variant="outline" size="lg" className="group">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group"
+              onClick={() => window.open('#', '_blank')}
+            >
               <ExternalLink className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               View Resume
             </Button>
