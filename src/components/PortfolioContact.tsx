@@ -109,7 +109,7 @@ const PortfolioContact = () => {
               </div>
             </div>
           </div>
-
+          </div>
         {/* Call to Action */}
         <div className="text-center mt-16">
           <Card className="max-w-2xl mx-auto p-8 bg-gradient-accent border-primary/20">
