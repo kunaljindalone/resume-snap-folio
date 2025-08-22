@@ -110,57 +110,6 @@ const PortfolioContact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-8">Send a Message</h3>
-            <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50">
-              <form className="space-y-6"  action="mailto:yourname@gmail.com" method="POST" encType="text/plain">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Name</label>
-                    <input 
-                      type="text"
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-foreground"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Email</label>
-                    <input 
-                      type="email"
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-foreground"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Subject</label>
-                  <input 
-                    type="text"
-                    className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-foreground"
-                    placeholder="What's this about?"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Message</label>
-                  <textarea 
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-foreground resize-vertical"
-                    placeholder="Tell me about your project or opportunity..."
-                  />
-                </div>
-                
-                <Button variant="hero" size="lg" className="w-full group">
-                  <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" type='submit'/>
-                  Send Message
-                </Button>
-              </form>
-            </Card>
-          </div>
-        </div>
-
         {/* Call to Action */}
         <div className="text-center mt-16">
           <Card className="max-w-2xl mx-auto p-8 bg-gradient-accent border-primary/20">
