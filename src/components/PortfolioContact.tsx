@@ -153,7 +153,7 @@ const PortfolioContact = () => {
                 </div>
                 
                 <Button variant="hero" size="lg" className="w-full group">
-                  <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
+                  <Send className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" type='submit'/>
                   Send Message
                 </Button>
               </form>
