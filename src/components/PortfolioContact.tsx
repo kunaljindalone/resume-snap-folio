@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Phone, Github, Linkedin, MapPin, Send, Code } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, Github, Linkedin, MapPin, Send, Code, User } from "lucide-react";
 
 const PortfolioContact = () => {
   const contactInfo = [
@@ -109,7 +111,65 @@ const PortfolioContact = () => {
               </div>
             </div>
           </div>
+
+          {/* Contact Form */}
+          <div>
+            <h3 className="text-2xl font-semibold text-foreground mb-8">Send a Message</h3>
+            <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50">
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                      Name
+                    </label>
+                    <Input
+                      id="name"
+                      placeholder="Your name"
+                      className="bg-background/50 border-border/50 focus:border-primary/50"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                      Email
+                    </label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="your.email@example.com"
+                      className="bg-background/50 border-border/50 focus:border-primary/50"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                    Subject
+                  </label>
+                  <Input
+                    id="subject"
+                    placeholder="Project collaboration"
+                    className="bg-background/50 border-border/50 focus:border-primary/50"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    Message
+                  </label>
+                  <Textarea
+                    id="message"
+                    placeholder="Tell me about your project or idea..."
+                    rows={6}
+                    className="bg-background/50 border-border/50 focus:border-primary/50 resize-none"
+                  />
+                </div>
+                <Button type="submit" variant="hero" className="w-full">
+                  <Send className="w-4 h-4 mr-2" />
+                  Send Message
+                </Button>
+              </form>
+            </Card>
           </div>
+        </div>
+
         {/* Call to Action */}
         <div className="text-center mt-16">
           <Card className="max-w-2xl mx-auto p-8 bg-gradient-accent border-primary/20">
@@ -121,11 +181,19 @@ const PortfolioContact = () => {
               Let's discuss how we can bring your ideas to life!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => document.getElementById('email')?.focus()}
+              >
                 <Mail className="w-5 h-5 mr-2" />
                 Get In Touch
               </Button>
-              <Button variant="outline" size="lg">
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => window.open('https://github.com/Kuna1jindal', '_blank')}
+              >
                 <Github className="w-5 h-5 mr-2" />
                 View GitHub
               </Button>
