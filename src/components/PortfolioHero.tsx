@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import link from 'react-router-dom';
 import { Github, Linkedin, Code, Mail, ExternalLink } from "lucide-react";
 
 const PortfolioHero = () => {
@@ -36,22 +37,23 @@ const PortfolioHero = () => {
               size="lg" 
               className="group"
               onClick={() => {
-                const contactSection = document.querySelector('section:last-of-type');
-                contactSection?.scrollIntoView({ behavior: 'smooth' });
+                const contactSection = document.getElementById('contact_me');
+                contactSection.scrollIntoView();
               }}
             >
               <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Contact Me
             </Button>
+            <a href='./KunalJindalResume_21_Aug2025.pdf' target="_blank">
             <Button 
               variant="outline" 
               size="lg" 
               className="group"
-              onClick={() => window.open('#', '_blank')}
             >
               <ExternalLink className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              View Resume
+            View Resume
             </Button>
+            </a>
           </div>
           
           <div className="flex justify-center space-x-6">

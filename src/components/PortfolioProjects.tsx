@@ -38,6 +38,18 @@ const PortfolioProjects = () => {
       ]
     },
     {
+      title: "Food Delivery App",
+      period: "2024",
+      description: "A dynamic news platform where users can view daily news and filter based on their interests with API integration.",
+      technologies: ["React" , "Vite" , "Node.js" , "Express" , "MongoDB" , "REST API" , "Tailwind CSS"],
+      highlights: [
+        "Designed and developed a responsive Food Delivery web application allowing users to browse restaurants, view menus, add items to cart, and place orders.",
+        "Implemented user authentication (JWT) for secure login and sign-up functionality.",
+        "Integrated RESTful APIs for fetching restaurant and food data, managing orders, and updating cart in real time.",
+        "Built an admin dashboard for restaurant owners to manage menus, pricing, and order status."
+      ]
+    },
+    {
       title: "Notes Application",
       period: "2023",
       description: "A secure note-taking application with user authentication and basic editing functionality.",
