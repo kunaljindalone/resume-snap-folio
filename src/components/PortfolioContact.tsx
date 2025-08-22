@@ -3,7 +3,22 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Github, Linkedin, MapPin, Send, Code, User } from "lucide-react";
+const handleSendMessage = (e) => {
+  e.preventDefault();
 
+  const name = e.target.name.value;
+  const email = e.target.email.value;
+  const subject = e.target.subject.value;
+  const message = e.target.message.value;
+
+  // Mailto link
+  const mailtoLink = `mailto:kunaljindalone@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    `${message}`
+  )}`;
+
+  // Redirect to mail client
+  window.location.href = mailtoLink;
+}
 const PortfolioContact = () => {
   const contactInfo = [
     {
@@ -118,11 +133,7 @@ const PortfolioContact = () => {
             <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50">
               <form 
                 className="space-y-6"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  // Handle form submission here
-                  console.log('Form submitted');
-                }}
+                onSubmit={handleSendMessage}
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
