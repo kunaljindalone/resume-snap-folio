@@ -45,7 +45,7 @@ const PortfolioContact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/Kuna1jindal",
+      href: "https://github.com/kunaljindalone",
       color: "hover:text-foreground"
     },
     {
