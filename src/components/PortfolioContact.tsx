@@ -210,7 +210,7 @@ const PortfolioContact = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => window.open('https://github.com/Kuna1jindal', '_blank')}
+                onClick={() => window.open('https://github.com/Kunaljindalone', '_blank')}
               >
                 <Github className="w-5 h-5 mr-2" />
                 View GitHub
