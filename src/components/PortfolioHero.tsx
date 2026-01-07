@@ -44,7 +44,7 @@ const PortfolioHero = () => {
               <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Contact Me
             </Button>
-            <a href={`https://drive.google.com/file/d/1sImpSyYnQExuJWYrK1xDNQdg5JcjEVin/view?usp=sharing`} target="_blank">
+            <a href={`https://drive.google.com/file/d/1qw35trhPPO1YPFxs5u8oXbAoWPy3ICMd/view?usp=sharing`} target="_blank">
             <Button 
               variant="outline" 
               size="lg" 
@@ -58,7 +58,7 @@ const PortfolioHero = () => {
           
           <div className="flex justify-center space-x-6">
             {[
-              { icon: Github, href: "https://github.com/Kuna1jindal", label: "GitHub" },
+              { icon: Github, href: "https://github.com/Kunaljindalone", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/kunal-jindal-8465891a7/", label: "LinkedIn" },
               { icon: Code, href: "https://leetcode.com/u/Kunal_Jindal/", label: "LeetCode" }
             ].map(({ icon: Icon, href, label }) => (
