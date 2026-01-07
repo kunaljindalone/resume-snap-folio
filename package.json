@@ -86,12 +86,12 @@
   "main": "eslint.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kuna1jindal/resume-snap-folio.git"
+    "url": "git+https://github.com/Kunaljindalone/resume-snap-folio.git"
   },
   "author": "Kunal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kuna1jindal/resume-snap-folio/issues"
+    "url": "https://github.com/Kunaljindalone/resume-snap-folio/issues"
   },
-  "homepage": "https://github.com/Kuna1jindal/resume-snap-folio#readme"
+  "homepage": "https://github.com/Kunaljindalone/resume-snap-folio#readme"
 }
